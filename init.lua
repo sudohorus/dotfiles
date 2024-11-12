@@ -18,7 +18,9 @@ require('lazy').setup({
     require 'plugins.treesitter',
     require 'plugins.telescope',
     require 'plugins.neocord',
-    -- require 'plugins.autocompletion',   
+    require 'plugins.autocompletion',
+    require 'plugins.autopairs',
+    require 'plugins.diagnostics',
 
     { 'wakatime/vim-wakatime', lazy = false }
 })
