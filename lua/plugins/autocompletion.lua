@@ -6,7 +6,7 @@ return {
         'hrsh7th/cmp-nvim-lsp',
         'L3MON4D3/LuaSnip',
         'saadparwaiz1/cmp_luasnip',
-        'neovim/nvim-lspconfig', -- para configurar o LSP
+        'neovim/nvim-lspconfig',
     },
     config = function()
         local cmp = require 'cmp'
@@ -33,11 +33,13 @@ return {
             }),
         })
 
-        -- Configurações do LSP para as linguagens
         lspconfig.clangd.setup{}    -- C, C++
         lspconfig.pyright.setup{}   -- Python
         lspconfig.cssls.setup{}     -- CSS
-        -- Para Assembly, você pode adicionar snippets ou completions adicionais se disponíveis
+        lspconfig.tsserver.setup{}  -- TypeScript, JavaScript
+        lspconfig.html.setup{}      -- HTML
+        lspconfig.jsonls.setup{}    -- JSON 
+        lspconfig.gopls.setup{}     -- Go
     end,
 }
 
