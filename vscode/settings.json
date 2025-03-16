@@ -1,0 +1,47 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "symbols",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.8,
+    "files.autoSave": "afterDelay",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderLineHighlight": "gutter",
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "editor.semanticHighlighting.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "workbench.statusBar.visible": false,
+    "apc.electron": {
+        "titleBarStyle": "hiddenInset",
+    },
+    "apc.listRow": {
+        "height": 24
+    },
+    "apc.stylesheet": {
+        ".title-label > h2": "display: none",
+    },
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.showTabs": "none",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.activityBar.location": "hidden",
+    "editor.cursorBlinking": "expand",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "python.createEnvironment.trigger": "off",
+    "glassit.alpha": 230,
+    "todo-tree.highlights.defaultHighlight": {
+    },
+    "git.enabled": false,
+    "vscord.app.name": "Code",
+    "vsicons.dontShowNewVersionMessage": true,
+    "files.exclude": {
+        "**/__pycache__ ": true
+    },
+    "editor.wordWrap": "on",
+}
