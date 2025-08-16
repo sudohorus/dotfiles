@@ -1,0 +1,31 @@
+return {
+    "NvChad/nvim-colorizer.lua",
+    event = { "BufReadPost", "BufNewFile" },
+    opts = {
+        filetypes = {
+            "*",
+            css = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+            scss = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+            sass = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+            html = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+            javascript = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+            javascriptreact = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+            typescript = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+            typescriptreact = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+            lua = { css = true, css_fn = true, rgb_fn = true, hsl_fn = true },
+        },
+        user_default_options = {
+            RGB = true,
+            RRGGBB = true,
+            RRGGBBAA = true,
+            rgb_fn = true,
+            hsl_fn = true,
+            css = true,
+            css_fn = true,
+            mode = "background",
+            tailwind = true,
+            sass = { enable = true, parsers = { "css" } },
+            always_update = true,
+        },
+    },
+}

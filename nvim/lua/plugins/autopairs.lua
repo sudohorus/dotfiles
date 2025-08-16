@@ -1,9 +1,10 @@
 return {
     'windwp/nvim-autopairs',
-    config = function()
-        require('nvim-autopairs').setup({
-            check_ts = true,
-        })
-    end,
+    event = "InsertEnter",
+    opts = {
+        check_ts = true,
+        ts_config = { java = false },
+        fast_wrap = {},
+        disable_filetype = { "TelescopePrompt", "vim" },
+    },
 }
-

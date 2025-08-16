@@ -1,5 +1,6 @@
 require 'core.options'
 require 'core.keymaps'
+require 'core.utils'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -11,17 +12,20 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+    require 'plugins.lsp',
+    require 'plugins.autocompletion',
+    require 'plugins.autopairs',
+    require 'plugins.diagnostics',
     require 'plugins.neotree',
     require 'plugins.colortheme',
     require 'plugins.bufferline',
     require 'plugins.lualine',
+    require 'plugins.indent',
+    require 'plugins.colorizer',
     require 'plugins.treesitter',
+    require 'plugins.illuminate',
+    require 'plugins.noice',
     require 'plugins.telescope',
     require 'plugins.neocord',
-    require 'plugins.autocompletion',
-    require 'plugins.autopairs',
-    require 'plugins.diagnostics',
-
-    { 'wakatime/vim-wakatime', lazy = false }
+    require 'plugins.terminal',
 })
-
