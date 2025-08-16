@@ -21,7 +21,9 @@
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/nvim-config.git ~/.config/nvim
+git clone https://github.com/sudohorus/dotfiles.git
+cd dotfiles
+mv nvim ~/.config/nvim
 ```
 
 2. Execute o script de instalação:
